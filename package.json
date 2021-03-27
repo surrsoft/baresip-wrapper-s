@@ -1,9 +1,10 @@
 {
-  "name": "baresip-wrapper",
+  "name": "baresip-wrapper-s",
   "version": "1.0.9",
-  "description": "A NodeJS wrapper for BareSIP utility",
+  "description": "A NodeJS wrapper for BareSIP utility. Is fork 'alexander-elgin/baresip-wrapper'",
   "keywords": [
-    "baresip"
+    "baresip",
+    "SIP"
   ],
   "repository": {
     "type": "git",
