@@ -1,3 +1,9 @@
+
+* is fork of repository 'baresip-wrapper' 
+
+
+* 2021-03-27 fix at event 'callReceived' 
+
 # BareSIP NodeJS Wrapper
 
 ## Requirements
