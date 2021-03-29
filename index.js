@@ -78,7 +78,13 @@ class Baresip {
 
     connect() {
         this.connected = true;
-        this.process = spawn(this.processPath);
+        const els = this.processPath.split(' ');
+        if (els.length > 0) {
+          const cmd = els.splice(0, 1);
+          this.process = spawn(cmd, els);
+        } else {
+          this.process = spawn(this.processPath);
+        }
 
         this.process.stdout.on('data', (data) => {
             const parsedData = `${data}`;
