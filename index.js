@@ -81,7 +81,7 @@ class Baresip {
         const els = this.processPath.split(' ');
         if (els.length > 0) {
           const cmd = els.splice(0, 1);
-          this.process = spawn(cmd, els);
+          this.process = spawn(cmd[0], els);
         } else {
           this.process = spawn(this.processPath);
         }
